@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px;}
+        ul{ list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightgray;}
+  .main{display: flex;flex-direction: row;}
+        .a,.b,.c,.d,.e{ 
+  color: black; font-size: thin;
+ 
+  padding: 14px 16px;
+  }
+  .main li{list-style-type: none;}
+  .main .a{margin-left: 20px;}
+  .last{background-color: blueviolet;color: white;}
+  img{width: 15px;height: 15px;}
+  .b{margin-left: 600px;}
+  .last{padding: 10px;}
+  select{background-color: lightgray;border:lightgray}
+  figcaption{text-align: right;}
+  .title img{width: 100px;height: 100px;margin left: 50px;}
+  .title{display: flex; justify-content: space-between;margin-left: 30px; margin-right: 30px;}
+  h2{padding-top: 27px;}
+  #phone img{width: 30px; height: 30px; margin-top: 27px;margin-left: 120px;}
+  .title h5{display: flex;}
+  h5{ margin-top: 27px;margin-left: 120px;}
+  .map img{width: 30px; height: 30px; margin-top: 27px;margin-left: 120px;}
+  .clock img{width: 30px; height: 30px; margin-top: 27px;margin-left: 120px;}
+  .navigation{background-color: darkblue;color: white;display: flex;flex-direction: row;margin-left: 30px;margin-right: 30px;justify-content: space-between;}
+  .navigation .div1{margin-left: 10px; margin-right: 10px;}
+  #search{margin-left: 620px;padding: 1.5px;}
+  #cart{margin-right: 30px;padding: 1.5px;}
+  .man{background-image: url(man\ pic.avif);width: 100%;height: 400px;background-size: cover;background-repeat: no-repeat;padding-bottom: 200px;}
+   h1{font-weight: bolder;color: darkblue;text-align:center;padding-top: 250px;padding-right: 800px;font-size: 50px;}
+ .man .div1{width: 150px;background-color: white;color: black;height: 40px;margin-right: 10px;}
+ .man .div2{width: 150px;background-color: blueviolet;color: white;height: 40px;}
+.box{display: flex;flex-direction: row; margin-left: 40px;margin-top: 15px;}
+.box .div1{text-align: center; padding: 10px;}
+.box .div2{text-align: center; padding: 10px;}
+.getquote{display: flex;flex-direction: row;background-color: darkblue;color: white;justify-content: space-between;}
+.getquote .div2{background-color: blueviolet; margin-right: 30px;padding: 20px;margin-top: 20px; margin-bottom: 20px;}
+.getquote .div1{margin-left: 30px; padding: 20px;}
+.about .a{font-size: 50px; text-align: center;font-weight: bolder; }
+.about p{text-align: center;}
+.about .div1,.about .div2,.about .div3{width: 400px;height: 300px;}
+.father{display: flex;flex-direction: row;justify-content:center; margin-top: 50px;border: 5px solid whitesmoke;margin-left: 220px;margin-right: 220px;}
+.div1 img{margin-left: 178px; margin-top: 30px;height: 30px;width: 30px;}
+.father .div2{background-image: url(purole\ bg.jpg);background-size: contain;}
+.div2 img{margin-left: 178px; margin-top: 30px;height: 30px;width: 30px;}
+.div3 img{margin-left: 178px; margin-top: 30px;height: 30px;width: 30px;}
+.foot{background-image: url(mountain.jpg);background-size: cover; width: 100%; height: 400px;padding-bottom: 200px;}
+.foot .p2{color: white;text-align: center;margin-top: 10px;}
+.foot .p1{padding-top: 100px;font-size: xx-large;color: white;font-weight: bolder;}
+.footparent{display: flex;flex-direction: row; margin-top: 80px;}
+.six{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;justify-content: space-around;}
+.diva img{height: 40px;width: 40px;}
+.six img{height: 40px; width: 40px;}
+.team{background-color: gainsboro;}
+.teamimg img{height: 300px;width: 300px;}
+.team .teamimg{display: flex;flex-direction: row;justify-content: space-around;}
+.teamimg .div1{background-color: aliceblue;padding: 20px;}
+.teamimg .div2{background-color: aliceblue;padding: 20px;}
+.teamimg .div3{background-color: aliceblue;padding: 20px;}
+.teamimg .div4{background-color: aliceblue;padding: 20px;}
+.callback{background-image: url(shadow.avif);padding-bottom: 20px;width: 100%;background-repeat: no-repeat;background-size: cover;}
+   .select{display: flex;flex-direction: row; justify-content: space-evenly;padding-top: 70px;}   
+   .select .div1,.select .div2,.select .div3,.select .div4{background-color: white;}
+   .logo {display: flex;justify-content: center;}
+   .logo img{height: 100px;width: 200px;}
+   .industry{display: flex;flex-direction: row;}
+   .corporate,.forensic,.economic{display: flex;flex-direction: row;}
+   .photo{display: flex;flex-direction: row;}
+   .p1{display: flex;flex-direction: column;}
+   .i1 img{width: 200px;height: 200px;}
+   .i2 img{width: 200px;height: 200px;}
+   .call{background-image: url(purole\ bg.jpg);}
+   .pappa .four{background-color: blue;}
+   .pappa{display: flex;flex-direction: row; justify-content: space-around;padding-top: 50px;padding-bottom: 70px;padding-left: 350px;padding-right: 350px;}
+   .hand{display: flex;flex-direction: row;justify-content: center;}
+   .bottom{background-color: purple;}
+   .hand img{width: 50px;height: 50px;padding-top: 10px;}
+   .row{display: flex;flex-direction: row;}
+   .con{display: flex;flex-direction: row;}
+   .conn{display: flex;flex-direction: column;}
+   .map{display: flex;flex-direction: row;}
+   .phone{display: flex;flex-direction: row;}
+   .mail{display: flex;flex-direction: row;}
+   .link{display: flex;flex-direction: column;}
+   li{list-style-type: disc;}
+   .hor{display: flex;flex-direction: row;}
+   .pic{display: flex;flex-direction: row; justify-content: center;}
+   .pic .img1{display: flex;flex-direction: column;}
+   .img1 img{width: 300px;height: 300px;padding-right: 2px;}
+   .img2 img{width: 300px;height: 300px;}
+   .img3 img{width: 300px;height: 300px;}
+   .img4 img{width: 300px;height: 300px;}
+   .vertical{display: flex;flex-direction: column;}
+   .link{display: flex;flex-direction: row;}
+   
+    </style>
+</head>
+<body>
+    <div class="top">
+  <ul class="main">
+    <li class="a">welcome to financial services consultant</li>
+   
+    <li class="b"><select name="" id="">
+        <option value="">English</option>
+    </select></li>
+    <li class="c"><img src="facebook.png" alt=""></li>
+    <li class="d"><img src="twitter.png" alt=""></li>
+    <li class="e"><img src="google plus.png" alt=""></li>
+    <li class="last"  >Get a Quote</li>
+
+
+</ul>
+    </div>
+
+
+    <div class="title">
+       
+           <img src="consu logo.jpeg" alt="" >
+               
+               <h2>Consuloan</h2>
+               <div id="phone"><img src="phone.jpeg" alt="">
+                <h5 style="float: right; margin-right: 100px; margin-left: 10px;">001-1234-88888 <br>info-deercreative@gmail.com</h5>
+                
+            </div>
+            <div class="map">
+                <img src="map.jpeg" alt="">
+                <h5 style="float: right; margin-right: 100px; margin-left: 10px;">40 Barla Street 132/2 <br>New York City,US</h5>
+            </div>
+            <div class="clock">
+                <img src="clock.png" alt="">
+                <h5 style="float: right; margin-right: 100px; margin-left: 10px;">8:00 AM-6:00 PM <br>Monday to Saturday</h5>
+
+            </div>
+    </div>
+
+    <div class="navigation">
+        
+        <div class="div1">HOME</div>
+        <div class="div1">ABOUT US</div>
+        <div class="div1">SERVICES</div>
+        <div class="div1">PAGES</div>
+        <div class="div1">PROJECTS</div>
+        <div class="div1">NEWS</div>
+        <div class="div1">SHOP</div>
+        <div class="div1">CONTACT</div>
+        <div class="div1" id="search"><img src="search.png" alt="" width="15px" height="15px"></div>
+        <div class="div1" id="cart"><img src="cart.png" alt=""width="15px" height="15px"></div>
+    </div>
+
+    <div class="man">
+     <h1>Communication is the Key <br> for any Global Business</h1>
+     <div class="box">
+     <div class="div1">ABOUT US</div>
+     <div class="div2">OUR SERVICES</div>
+    </div>
+    </div>
+    <div class="getquote">
+     <div class="div1">Would you like to speak to one of our financial advisers?
+        <br>Just submit your contact details and we"ll be in touch shortly
+     </div>
+     <div class="div2">
+        GET A QUOTE
+     </div>
+    </div>
+
+    <div class="about">
+        <p class="a">About Us</p>
+   <p>We help you in creating financial strategy that represents your personality.Getting to know you <br>
+    financial advisors's primary goal.-An approach centered around your life's priorities.It's time for a <br>
+financial strategy that puts your needs and priorities front and center.</p>
+ <div class="father">
+<div class="div1">
+    <img src="dollor.jpg" alt="">
+    <h3 style="text-align: center;margin-top: 20px;">Financial Projections</h3>
+    <p style="text-align: center;margin-top: 25px;">Sed ut prespictus unde omins iste <br> nature error sit volcanicuption accusan <br>dolrempeque taundatium </p>
+</div>
+<div class="div2">
+    <img src="content.jpg" alt="">
+    <h3 style="text-align: center;margin-top: 20px;color: white;">Strategy and Consulting</h3>
+    <p style="text-align: center;margin-top: 25px;color: white;">Sed ut prespictus unde omins iste <br> nature error sit volcanicuption accusan <br>dolrempeque taundatium </p>
+</div>
+<div class="div3">
+<img src="headphone.jpg" alt="">
+<h3 style="text-align: center;margin-top: 20px;">Online Consulting</h3>
+<p style="text-align: center;margin-top: 25px;">Sed ut prespictus unde omins iste <br> nature error sit volcanicuption accusan <br>dolrempeque taundatium </p>
+</div>
+</div>
+
+<div class="foot">
+<p class="p1">We advise you, you call the right decision!</p>
+<p class="p2">We help entreprenrus get their act together before they talk to investors.</p>
+<div class="footparent">
+    <div class="div1">
+        <img src="clockfoot.jpg" alt="" height="30px" width="30px">
+        <p style="font-weight: bolder;font-size: xx-large;margin-top: 10px;color: white;">90</p>
+        <p style="color: white;">Companies consulted</p>
+    </div>
+    <div class="div1">
+        <img src="headphone.jpg" alt="">
+        <p style="font-weight: bolder;font-size: xx-large;margin-top: 10px;color: white;">120</p>
+        <p style="color: white;">consultants</p>
+    </div>
+    <div class="div1">
+        <img src="award.jpg" alt="">
+        <p style="font-weight: bolder;font-size: xx-large;margin-top: 10px;color: white;">50</p>
+        <p style="color: white;">Award Winning</p>
+    </div>
+    <div class="div1">
+        <img src="heart.jpg" alt="">
+        <p style="font-weight: bolder;font-size: xx-large;margin-top: 10px;color: white;">240</p>
+        <p style="color: white;">Satisfied Customers</p>
+    </div>
+</div>
+</div>
+
+<div class="industry">
+    <h4 style="text-align: center;font-size: xx-large;font-weight: bolder;padding-top: 50px;">Our Industries</h4>
+    <div class="underline" style="background-color: blueviolet; width: 80px; height: 5px;margin-left: 720px;margin-top: 10px;"></div>
+</div>
+ <div class="corporate">
+    <div class="a">
+        <img src="six clock.jpg" alt="">
+    </div>
+    <div class="aa">
+        <h3>Corporate Finance</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <br>
+         adipisicing elit. Nobis ad nemo provident 
+         Lorem ipsum dolor sit.</p>
+    </div>
+ </div>
+ <div class="economic">
+    <div class="b">
+        <img src="building.png" alt="">
+    </div>
+    <div class="bb">
+<h3>Economic Consulting</h3>
+<p>Lorem ipsum dolor sit amet consectetur <br>
+    adipisicing elit. Nobis ad nemo provident 
+    Lorem ipsum dolor sit.</p>
+    </div>
+ </div>
+ <div class="forensic">
+    <div class="c">
+        <img src="bell.jpg" alt="">
+    </div>
+    <div class="cc">
+        <h3>Forensic and litigtion</h3>
+        <p>Lorem ipsum dolor sit amet consectetur <br>
+            adipisicing elit. Nobis ad nemo provident 
+            Lorem ipsum dolor sit.</p>
+    </div>
+ </div>
+ <div class="div1"></div>
+ <div class="div1"></div>
+ <div class="div1"></div>
+</div>
+
+<div class="team">
+    <h2 style="text-align: center;">Meet Our Team</h2>
+    <p style="text-align: center;">We are here to Accelerate your business and helps you find the way</p>
+  <div class="pic">
+     <div class="img1">
+        <div><img src="p1.jpg" alt="" ></div>
+        <p style="text-align: center; background-color: darkblue;" >Jackson Nash <br> <span>Tax Advisor</span></p>
+     </div>
+     <div class="img2">
+        <div><img src="p2.jpg" alt=""></div>
+        <p style="text-align: center; background-color: darkblue;">Jackson Nash <br> <span>Tax Advisor</span></p>
+     </div>
+
+     <div class="img3">
+        <div><img src="p3.jpg" alt=""></div>
+        <p style="text-align: center; background-color: darkblue;">Ollie Nash <br> <span>Business Advisor</span></p>
+     </div>
+
+     <div class="img4">
+        <div><img src="p4.jpg" alt=""></div>
+        <p style="text-align: center; background-color: darkblue;">Roger West <br> <span>Financier</span></p>
+     </div>
+
+
+
+
+
+
+  </div>
+
+<div class="call">
+    <h2 style="text-align: center; color: white;">Request a call back.</h2>
+    <p style="text-align: center;color: white;padding-top: 20px">Would you like to speak to one of our financial advisers?just submit your contact details and we"ll <br>
+  be in touch shortly.you can also email us if you prefer that type of Communication</p>
+<div class="pappa">
+  <div class="one"><select name="" id="">
+    <option value="">How can we help?</option>
+  </select>
+</div>
+<div class="two">
+    <input type="text" name="" id="" placeholder="Your Name*">
+</div>
+<div class="three">
+    <input type="text" name="" id="" placeholder="Your Phone number*">
+</div>
+<div class="four">
+    <input type="text" name="" id="" placeholder="Submit >">
+</div>
+</div>
+</div>
+
+<div class="logo">
+    <div class="div1">
+        <img src="prime.jpg" alt="" style="margin-left: ;">
+    </div>
+    <div class="div1">
+        <img src="duo.jpg" alt="">
+    </div>
+    <div class="div1">
+        <img src="tech.png" alt="">
+    </div>
+    <div class="div1">
+        <img src="imgeris.png" alt="">
+    </div>
+    <div class="div1" style="margin-right: 580px;">
+        <img src="amaris.png" alt="">
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="hand">
+        <div><img src="hand.jpg" alt="" ></div>
+        <div><h2>Click in the image to download</h2></div>
+    </div>
+<!-- yyyy --> <div class="vertical">
+    <div class="con">
+        <div class="div2"><img src="C:\Users\admin\Desktop\nav_html\logo.png" alt=""></div>
+        <div class="div2"> <h2 style="margin-left: 10px;">Consuloan</h2></div>
+    </div>
+
+    <div class="lorem"><p style="margin-left: 180px;">Lorem ipsum dolor <br>
+        Lorem ipsum dolor sit. <br>
+    Lorem ipsum dolor sit.</p></div>
+
+    <div class="map">
+        <div><img src="map.png" alt="" style="padding-left: 55px;"></div>
+        <div style="padding-top: 30px;padding-left: 10px;">40 barla street New york USA</div>
+       </div>
+
+       <div class="phone">
+        <div><img src="phone.jpg" alt="" style="padding-left: 175px;width: 30px;height: 30px;"></div>
+        <div style="padding-top: 10px;padding-left: 10px;">0001-1234-88888</div>
+       </div>
+
+       <div class="mail">
+        <div><img src="mail.jpg" alt="" style="padding-left: 175px;width: 30px;height: 30px;"></div>
+        <div style="padding-top: 10px;padding-left: 10px;">info-decorative@gmail.com</div>
+       </div>
+
+<div class="link">
+    <div style="font-weight: bold;">Our Links</div>
+    <p>Home</p>
+</div>
+
+
+
+
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
